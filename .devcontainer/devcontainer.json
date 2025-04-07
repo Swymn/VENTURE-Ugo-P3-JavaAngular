@@ -1,0 +1,35 @@
+{
+    "name": "OpenClassrooms Java/Angular",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+    "features": {
+      "ghcr.io/devcontainers/features/java:1": {
+        "version": "21",
+        "installMaven": true
+      },
+      "ghcr.io/devcontainers/features/node:1": {
+        "version": "22",
+        "npmGlobalPackages": [
+          "@angular/cli"
+        ]
+      },
+      "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+    },
+  
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "vscjava.vscode-java-pack",
+          "angular.ng-template",
+          "esbenp.prettier-vscode",
+          "dbaeumer.vscode-eslint",
+          "redhat.java",
+          "vscjava.vscode-spring-boot",
+          "VisualStudioExptTeam.vscodeintellicode"
+        ]
+      }
+    },
+  
+    "postCreateCommand": "npm install -g @angular/cli",
+  
+    "remoteUser": "vscode"
+}
