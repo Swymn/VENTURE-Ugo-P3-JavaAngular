@@ -1,3 +1,7 @@
 spring:
   application:
     name: VENTURE-Ugo-P3
+
+logging:
+  level:
+    '[fr.swymn]': DEBUG

@@ -24,7 +24,12 @@
           "dbaeumer.vscode-eslint",
           "redhat.java",
           "vscjava.vscode-spring-boot",
-          "VisualStudioExptTeam.vscodeintellicode"
+          "VisualStudioExptTeam.vscodeintellicode",
+          "vmware.vscode-boot-dev-pack",
+          "SonarSource.sonarlint-vscode",
+          "Orta.vscode-jest",
+          "asciidoctor.asciidoctor-vscode",
+          "EchoAPI.echoapi-for-vscode"
         ]
       }
     },
