@@ -1,0 +1,3 @@
+jwt:
+  privateKey: testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
+  expirationTime: 360

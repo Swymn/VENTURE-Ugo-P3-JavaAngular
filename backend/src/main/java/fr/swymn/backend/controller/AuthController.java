@@ -2,7 +2,7 @@ package fr.swymn.backend.controller;
 
 import fr.swymn.backend.dto.UserCredential;
 import fr.swymn.backend.model.Token;
-import fr.swymn.backend.service.UserService;
+import fr.swymn.backend.service.AuthenticationService;
 import jakarta.validation.Valid;
 
 import org.springframework.http.ResponseEntity;
@@ -15,9 +15,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/auth")
 public class AuthController {
 
-    private final UserService userService;
+    private final AuthenticationService userService;
 
-    public AuthController(final UserService userService) {
+    public AuthController(final AuthenticationService userService) {
         this.userService = userService;
     }
 

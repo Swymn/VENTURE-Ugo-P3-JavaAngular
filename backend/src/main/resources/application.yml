@@ -4,4 +4,8 @@ spring:
 
 logging:
   level:
-    '[fr.swymn]': DEBUG
+    fr.swymn: debug
+
+jwt:
+  privateKey: secretsecretsecretsecretsecretsecretsecretsecretsecretsecretsecretsecretsecretsecretsecretsecretsecretsecret
+  expirationTime: 3600000

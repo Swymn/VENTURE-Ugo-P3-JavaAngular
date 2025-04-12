@@ -3,6 +3,7 @@ package fr.swymn.backend.controller;
 import java.util.HashMap;
 import java.util.Map;
 
+import fr.swymn.backend.service.BadCredential;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -29,6 +30,14 @@ public class AuthControllerExceptionHandler {
         Map<String, String> error = new HashMap<>();
         error.put("username", ex.getMessage());
         log.debug("Handling username not found exception: {}", error);
+        return ResponseEntity.badRequest().body(error);
+    }
+
+    @ExceptionHandler(BadCredential.class)
+    public ResponseEntity<Map<String, String>> handleBadCredentialException(BadCredential ex) {
+        Map<String, String> error = new HashMap<>();
+        error.put("username", ex.getMessage());
+        log.debug("Handling bad credential exception: {}", error);
         return ResponseEntity.badRequest().body(error);
     }
 }

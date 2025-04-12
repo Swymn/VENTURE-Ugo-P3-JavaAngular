@@ -13,7 +13,7 @@ import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.web.servlet.MockMvc;
 
 import fr.swymn.backend.model.Token;
-import fr.swymn.backend.service.UserService;
+import fr.swymn.backend.service.AuthenticationService;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
@@ -27,7 +27,7 @@ class AuthControllerTest {
     private MockMvc mockMvc;
 
     @MockitoBean
-    private UserService userService;
+    private AuthenticationService userService;
 
     @Test
     void loginUser_shouldLoginUser_existingUser() throws Exception {
