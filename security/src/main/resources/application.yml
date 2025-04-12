@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: Security
+
+logging:
+  level:
+    fr.swymn: debug
+
+jwt:
+  privateKey: secretsecretsecretsecretsecretsecretsecretsecretsecretsecretsecretsecretsecretsecretsecretsecretsecretsecret
+  expirationTime: 3600000
+
+server:
+  port: 8081
